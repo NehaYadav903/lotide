@@ -40,4 +40,4 @@ This project was created and published by me as part of my learnings at Lighthou
 `*middle :` given an array, return the elements in the middle of the array if array length is odd. If the length is even, return both middle numbers.\
 `*tail :` given an array, return an array without the first element from the original array\
 `*takeUntil :` given an array and a condition, create a new array with the elements starting from index[0] of the original array, until an element does not meet the condition given.\
-`*without :` given two arrays, modify array 1 to remove all elements that are in both array 1 and array 2\
+`*without :` given two arrays, modify array 1 to remove all elements that are in both array 1 and array 2
