@@ -1,22 +1,23 @@
+// const assertArraysEqual = function(actual, expected) {
+//   if (eqArrays(actual, expected)) {
+//     console.log(`✅✅✅ Assertion Passed:${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑 Assertion Failed:${actual} !== ${expected}`);
+//   }
+// };
+// const eqArrays = function(array1, array2) { //function that can compare two arrays for a perfect match.
+//   if (array1.length !== array2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < array1.length; i++) {
+//     if (array1[i] !== array2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed:${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed:${actual} !== ${expected}`);
-  }
-};
-const eqArrays = function(array1, array2) { //function that can compare two arrays for a perfect match.
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
 const takeUntil = function(array, callback) {
   const results = [];
   for (const el of array) {

@@ -1,11 +1,12 @@
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed:${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed:${actual} !== ${expected}`);
-  }
-};
+// const assertArraysEqual = function(actual, expected) {
+//   if (eqArrays(actual, expected)) {
+//     console.log(`✅✅✅ Assertion Passed:${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑 Assertion Failed:${actual} !== ${expected}`);
+//   }
+// };
+const assertEqual = require('./assertEqual');
 const eqArrays = function(array1, array2) { //function that can compare two arrays for a perfect match.
   if (array1.length !== array2.length) {
     return false;
