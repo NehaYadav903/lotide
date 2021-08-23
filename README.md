@@ -24,8 +24,8 @@ This project was created and published by me as part of my learnings at Lighthou
 
 ## Documentation
 
-`*assertArraysEqual :` given two arrays, evaluate if they are equal, or not
-`*assertEqual :` given two inputs, evaluate if they are equal, or not
+`*assertArraysEqual :` given two arrays, evaluate if they are equal, or not__
+`*assertEqual :` given two inputs, evaluate if they are equal, or not__
 `*assertObjectsEqual :` given two objects, evaluate if they are equal, or not
 `*countLetters :` when given a string, create an object with letters as keys, which equate to values indicating how many the letter appears in the string
 `*countOnly :` given an array of items, then return counts for a specific subset of those items - This is limited to String only
