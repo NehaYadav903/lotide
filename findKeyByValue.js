@@ -1,3 +1,5 @@
+// FUNCTION IMPLEMENTATION
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log("✅✅✅Assertion Passed: " + actual + " === " + expected);
@@ -6,7 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 const findKeyByValue = function(obj, val) {
-  for (let key of Object.keys(bestTVShowsByGenre)) {
+  for (let key of Object.keys(bestTVShowsByGenre)) { 
     if (obj[key] === val) {
       return key;
     }
@@ -19,4 +21,6 @@ const bestTVShowsByGenre = {
 };
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "Friends"), "adventure");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");

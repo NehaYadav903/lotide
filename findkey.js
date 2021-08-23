@@ -1,12 +1,3 @@
-const findKey = function (object, callback) {
-  for (let value in object) {
-    if ((callback(object[value]))) {
-      return value;
-    }
-  }
-  return undefined;
-}
-
 // const assertEqual = function(actual, expected) {
 //   if (actual === expected) {
 //     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -15,6 +6,17 @@ const findKey = function (object, callback) {
 //   }
 // }
 
+//Implement the function findKey which takes in an object and a callback. It should scan the object and return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined.
+
+//Function Implementation
+const findKey = function(obj, callback) {
+  const names = Object.keys(obj);
+  for (const i of names) {
+    if ((callback(obj[i])) === true) {
+      return (i);
+    }
+  }
+};
 console.log(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
