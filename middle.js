@@ -15,6 +15,7 @@ const middle = function(array) {
 
 module.exports = middle;
 
+//Test code
 assertArraysEqual(middle([1]), []);// => []
 assertArraysEqual(middle([1, 2]), []); // => []
 assertArraysEqual(middle([0, 1, 2]), [2]); // => [2]
